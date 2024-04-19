@@ -56,14 +56,14 @@ const Products = () => {
                 {/* <PageWrapper> */}
                 <div className="container px-5 py-24 mx-auto">
                     <motion.div
-                        className="flex flex-wrap -m-4"
+                        className="flex flex-wrap justify-center md:justify-evenly w-11/12"
                         variants={container}
                         initial="hidden"
                         animate="show" >
 
                         {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
-                            <motion.div key={index} className="h-[300px] w-[300px]" variants={item} >
-                                <Card img={'https://images.unsplash.com/photo-1690656111993-9e57cf407923?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHQlMjBzaHVydHxlbnwwfHwwfHx8MA%3D%3D'} />
+                            <motion.div key={index} className="h-[300px] w-[350px]" variants={item} >
+                                <Card img={'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D'} />
                             </motion.div>
                         ))}
 

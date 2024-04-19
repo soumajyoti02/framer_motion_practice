@@ -1,5 +1,9 @@
+"use client"
+
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
+
 
 const Navbar = () => {
     return (
@@ -12,11 +16,11 @@ const Navbar = () => {
                         </svg>
                         <Link href={'/'} className="ml-3 text-xl">Framer Motion</Link>
                     </div>
-                    <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                    <motion.div initial={{ x: '-100vw' }} animate={{ x: 0 }} className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                         <Link href={'/About'} className="mr-5 hover:text-gray-900">About</Link>
                         <Link href={'/Products'} className="mr-5 hover:text-gray-900">Products</Link>
                         <Link href={'/Contact'} className="mr-5 hover:text-gray-900">Contact</Link>
-                    </nav>
+                    </motion.div>
                 </div>
             </header>
         </div>
