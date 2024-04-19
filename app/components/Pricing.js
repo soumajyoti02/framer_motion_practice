@@ -6,7 +6,7 @@ const Pricing = () => {
     return (
         <>
             <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
-                <motion.div initial={{ opacity: 0, scale: 0, x: 200, y: 100 }} whileInView={{ opacity: 1, scale: 1, x: 0, y: 0 }} transition={{ duration: 0.7 }} whileHover={{ scale: 1.1 }} viewport={{ once: true }} className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
+                <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.7 }} whileHover={{ scale: 1.1 }} viewport={{ once: true }} className="h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col relative overflow-hidden">
                     <h2 className="text-sm tracking-widest title-font mb-1 font-medium">START</h2>
                     <h1 className="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">Free</h1>
                     <p className="flex items-center text-gray-600 mb-2">
